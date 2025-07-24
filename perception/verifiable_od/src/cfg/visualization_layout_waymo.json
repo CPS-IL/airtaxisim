@@ -1,0 +1,10 @@
+{
+	"point_cloud_viewer_layer": "none",
+	"image_viewer_layer_left": "clustering",
+	"image_viewer_layer_middle": "segmentation",
+	"image_viewer_layer_right": "range",
+	"lidar_return": "first",
+	"bounding_box_type": "none",
+	"field_of_view": "default",
+	"show_camera_frame": true
+}

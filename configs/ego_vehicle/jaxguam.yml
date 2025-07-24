@@ -1,0 +1,6 @@
+type: jaxguam
+model: uli_cora
+debug: false
+plot: false
+save_video: false
+skip_sleep: false

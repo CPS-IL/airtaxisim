@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jax-guam"
+version = "0.0.1"
+description = "Jax GUAM dynamics"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python",
+]
+dependencies = ["jax", "jaxtyping", "matplotlib", "tqdm", "loguru", "attrs", "ipdb"]
+
+[tool.isort]
+profile = "black"
+known_first_party = [""]

@@ -1,0 +1,42 @@
+# Global
+loglevel: TRACE # One of ["TRACE", "DEBUG", "INFO", "SUCCESS", "WARNING", "ERROR", "CRITICAL"]
+
+# Order of services here is also the order in which services are started
+services:
+  carla:
+    include: services/carla.yml
+  simulator:
+    include: services/simulator.yml
+
+# Test
+map: Town02_Opt
+
+# Vehicle
+ego_vehicle:
+  type: guam # One of ["guam", "minihawk"]
+  location: 
+
+# Adversarial object
+adv_object:
+  enabled: True # One of ["True", "False"]
+  pose:
+    type: relative # One of ["absolute", "relative"]. If "relative", then relative to the starting pose of the ego vehicle.
+    location:
+      x: 10
+      y: 0
+      z: 0
+    rotation:
+      roll: 0
+      pitch: 0
+      yaw: 0
+  velocity:
+    x: -0.15
+    y: 0
+    z: -1.5
+
+# Target point
+target:
+  type: relative # One of ["absolute", "relative"]. Absolute -- absolute in CARLA's global coordinate frame. Relative -- relative to the vehicle's starting location. 
+  x: 0
+  y: 0
+  z: -100

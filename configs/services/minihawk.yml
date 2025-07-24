@@ -1,0 +1,7 @@
+start_delay: 1
+ros:
+  workspace: /catkin_ws
+  ros_package: minihawk
+  rosrun_files:
+    - node_vehicle.py
+    # - node_planner.py

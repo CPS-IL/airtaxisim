@@ -1,0 +1,14 @@
+start_delay: 1
+start_commands: >
+      cd /catkin_ws/src/verifiable_od/src/lib/depth_clustering &&
+      rm -rf build install ;
+      cd /catkin_ws/src/verifiable_od/src/lib/depth_clustering/scripts/depth_clustering &&
+      source setup.bash --system &&
+      cd /catkin_ws/src/verifiable_od/src/lib/depth_clustering/build/amd64/depth_clustering/release &&
+      make -j8
+
+ros:
+  workspace: /catkin_ws
+  ros_package: verifiable_od
+  rosrun_files:
+  - node

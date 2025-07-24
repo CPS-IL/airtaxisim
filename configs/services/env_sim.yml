@@ -1,0 +1,36 @@
+start_delay: 1
+ros:
+  workspace: /catkin_ws
+  ros_package: rraaa
+  launch_file: run.launch
+weather:
+      weather_flag: default       # Options: 'default' or 'custom'
+      lighting_flag: default       # Options: 'default' or 'custom'
+      type: ClearSunset      # Required if weather_flag is 'custom'
+      lighting:                   # Required if lighting_flag is 'custom'
+        cloudiness: 80.0
+        precipitation: 50.0
+        precipitation_deposits: 30.0
+        sun_altitude_angle: 15.0
+        sun_azimuth_angle: 90.0
+        fog_density: 20.0
+        fog_distance: 150.0
+
+
+host_setup: # Commands to run on host machine
+  - "xhost -local:"
+  - "xhost +local:"
+
+#carla weather condition options
+#ClearNoon
+# ClearSunset
+# CloudyNoon
+# CloudySunset
+# WetNoon
+# WetSunset
+# MidRainyNoon
+# MidRainSunset
+# HardRainNoon
+# HardRainSunset
+# SoftRainNoon
+# SoftRainSunse

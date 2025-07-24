@@ -104,10 +104,6 @@ Developing robust autonomous control for aerial vehicles is significantly more c
 
 This project is for researchers, engineers, and developers who want to push the boundaries of autonomy in the sky. 
 
-> ⚠️ **Note:** The full source code for AirTaxiSim is not yet publicly available.  
-> We are currently refining and documenting the simulator to ensure a high-quality release.  
-> Stay tuned — the complete codebase will be made available here soon.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -146,8 +142,15 @@ Clone this repository with submodules.
 
 ```bash
 git clone https://github.com/CPS-IL/airtaxisim.git --recurse-submodules
+```
+
+### Running
+
+Run the main script with a sample configuration:
+
+```bash
 cd airtaxisim
-python3 rraaa.py configs/single-static.yml
+python3 rraaa.py configs/single-static-jaxguam.yml
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -202,11 +205,27 @@ Don't forget to give the project a star! Thanks again!
 </a>
 
 
+## Citation
+
+If you use AirTaxiSim in your research, please cite us:
+
+```bibtex
+@inproceedings{airtaxisim,
+  title={AirTaxiSim: A Simulator for Autonomous Air Taxis},
+  author={Bansal, Ayoosh and Yeghiazaryan, Mikael and Yoon, Hyung-Jin and Wang, Duo and Rasul, Ashik E and Tao, Chuyuan and Zhao, Yang and Zhu, Tianyi and So, Oswin and Fan, Chuchu and others},
+  booktitle={AIAA AVIATION FORUM AND ASCEND 2025},
+  pages={3349},
+  year={2025}
+}
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- LICENSE -->
 <!-- ## License
 
-Distributed under the project_license. See `LICENSE.txt` for more information.
+Distributed under the project_license. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 

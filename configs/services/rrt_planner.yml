@@ -1,0 +1,6 @@
+start_delay: 5
+ros:
+  workspace: /catkin_ws
+  ros_package: rrt_planner
+  rosrun_files:
+    - rrt_planner_node.py

@@ -1,0 +1,33 @@
+<!--
+  Example launch file for octomap_server mapping:
+  Listens to incoming PointCloud2 data and incrementally builds an octomap.
+  The data is sent out in different representations.
+  Copy this file into your workspace and adjust as needed, see
+  www.ros.org/wiki/octomap_server for details
+-->
+<launch>
+
+	<node pkg="rraaa" type="node_carla.py" name="carla_node" output="screen" />
+
+
+	<node pkg="rraaa" type="node_input_display.py" name="display_node" output="screen" />
+
+	<node type="rviz" name="rviz" pkg="rviz" args="-d $(find rraaa)/rviz_settings/octomap_navi.rviz" />
+
+	<node pkg="rraaa" type="converter" name="converter_node" />
+
+	<!-- Vehicle parameters -->
+	<arg name="vehicle" value="guam"/>
+
+	<param name="vehicle" type="string" value="$(arg vehicle)"/>
+	<param name="/$(arg vehicle)/plot" type="bool" value="False"/>
+	<param name="/$(arg vehicle)/save_video" type="bool" value="False"/>
+	<node pkg="rraaa" type="node_vehicle.py" name="$(arg vehicle)" output="screen" />
+
+	<!-- Planner parameters -->
+	<!-- <node pkg="rraaa" type="node_static_landing_planner.py" name="planner" output="screen" /> -->
+
+	<!-- Target point ROS node -->
+	<!-- <node pkg="rraaa" type="node_target.py" name="target" output="screen"/> -->
+
+</launch>

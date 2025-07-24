@@ -1,0 +1,28 @@
+{
+    "depth_clustering": {
+        "distance_clustering": 5,
+        "score_clustering": 0.2,
+        "angle_clustering": 10,
+        "angle_ground_removal": 9,
+        "size_cluster_min": 10,
+        "size_cluster_max": 20000,
+        "size_smooth_window": 5,
+        "use_camera_fov": true,
+        "use_score_filter": false,
+        "score_filter_threshold": 0.5,
+        "score_type_point": "type_1",
+        "score_type_cluster": "type_1",
+        "score_type_frame": "type_1",
+        "bounding_box_type": "polygon",
+        "difference_type": "angles_precomputed",
+        "ground_truth_cube_file_name": "waymo_ground_truth_cube.json",
+        "ground_truth_flat_file_name": "waymo_ground_truth_flat.json"
+    },
+    "logger": {
+        "log_path": "./",
+        "log_file_name_cube": "depth_clustering_detection_cube.json",
+        "log_file_name_polygon": "depth_clustering_detection_polygon.json",
+        "log_file_name_flat": "depth_clustering_detection_flat.json",
+        "log": true
+    }
+}

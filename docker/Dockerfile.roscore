@@ -1,0 +1,3 @@
+FROM ros:noetic
+ENV ROS_MASTER_URI=http://localhost:11311
+ENV ROS_HOSTNAME=localhost

@@ -1,0 +1,6 @@
+start_delay: 1
+ros:
+  workspace: /catkin_ws
+  ros_package: ground_station
+  rosrun_files:
+    - node_target.py
