@@ -198,11 +198,11 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Top contributors:
+<!-- ### Top contributors:
 
 <a href="https://github.com/CPS-IL/airtaxisim/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=CPS-IL/airtaxisim" alt="contrib.rocks image" />
-</a>
+</a> -->
 
 
 ## Citation
