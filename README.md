@@ -45,7 +45,7 @@
   <p align="center">
     A realistic simulator of autonomous aerial vehicles in urban environments.
     <br />
-    <a href="https://github.com/CPS-IL/airtaxisim"><strong>Explore the docs »</strong></a>
+    <a href="https://airtaxisim.readthedocs.org"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/CPS-IL/airtaxisim/media/demo.mp4">View Demo</a>
